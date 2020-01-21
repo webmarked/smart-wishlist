@@ -1,0 +1,9 @@
+var wishlistid=SWGetExpressWishlistId();    
+$.ajax({
+        url: "/a/wishlist?type=api&wishlistid="+wishlistid+"&version=1",
+        dataType: "json",
+        success: function(data) {
+			//your code for displaying the wishlist data.
+			}
+
+    });
